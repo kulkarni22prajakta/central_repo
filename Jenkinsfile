@@ -9,8 +9,8 @@ stages{
 stage ('stage-1'){
 steps{
 
-sh "cp -r index.html /var/www/html/"
-sh "chmod -R 777 /var/www/html"
+sh "docker build -t my_img /root/.jenkins/workspace/job1/"
+sh "docker run -itdp 50:80 --name my_cont my_img"
 }
 
 }
