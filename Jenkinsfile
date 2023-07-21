@@ -13,6 +13,7 @@ steps{
   
 /*sh "docker stop my_cont"
 sh "docker system prune -a -f"*/
+  sh "sudo su -"
   sh " yum install java-1.8.0-openjdk-devel.x86_64"
   sh " yum install git -y"
   sh "yum install docker -y"
